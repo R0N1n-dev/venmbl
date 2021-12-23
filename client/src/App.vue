@@ -69,7 +69,7 @@ export default {
   },
   methods: {
     async addItem() {
-      const response = await axios.post("api/bucketListItems", {
+      const response = await axios.post("api/bucketListItems/", {
         description: this.description,
       });
       this.items.push(response.data);
